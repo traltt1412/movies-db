@@ -3,11 +3,12 @@ import Header from './../Header/Header'
 import Footer from './../Footer/Footer'
 
 export default class Layout extends React.Component {
+  
   render () {
-    const { children } = this.props
+    console.log(this.props)
     return <div>
       <Header></Header>
-      <main>{ children }</main>
+      <main>{ this.props.children }</main>
       {/* <Footer></Footer> */}
     </div>
   }
