@@ -1,5 +1,22 @@
-.App {
-  div {
-    color: red;
+
+$header-bg: #081c24;
+$header-color: #fff;
+
+header {
+  background: $header-bg;
+  padding: 10px 15px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+
+  .logo {
+    width: 81px;
+    height: auto;
+  }
+
+  h1 {
+    color: $header-color;
+    margin: 0 0 0 15px;
   }
 }
