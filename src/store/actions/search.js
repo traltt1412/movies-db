@@ -12,7 +12,6 @@ const search = searchTerm => {
       .then(response => response.json().then(body => ({response, body})))
       .then(({ response, body }) => {
         if (response.ok) {
-          console.log(body)
           dispatch ({
             type: 'search',
             payload: searchTerm,

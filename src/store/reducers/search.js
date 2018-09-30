@@ -10,6 +10,5 @@ export default function(state = initState, action) {
     case 'search':
       state = { ...state, searchTerm: action.payload, movies: action.movies }
   }
-  console.log (state)
   return state
 }

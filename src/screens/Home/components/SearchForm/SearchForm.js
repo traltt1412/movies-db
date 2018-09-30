@@ -26,17 +26,6 @@ const mapDispatchToProps = dispatch => {
   return {
     search: searchTerm => {
       dispatch(search(searchTerm))
-
-      // return fetch(`https://api.themoviedb.org/3/search/movie?api_key=249bfd842941339e51fe3d4eaeeba219&query=${searchTerm}`)
-      // .then(response => response.json().then(body => ({response, body})))
-      // .then(({ response, body }) => {
-      //   if (response.ok) {
-      //     console.log(body)
-      //   } else {
-      //     console.log('fail')
-      //     console.log(response)
-      //   }
-      // })
     },
   }
 }
