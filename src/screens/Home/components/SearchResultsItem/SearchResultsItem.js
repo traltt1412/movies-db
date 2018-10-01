@@ -3,10 +3,6 @@ import './SearchResultsItem.scss'
 
 export default class SearchResultsItem extends Component {
   render() {
-    // const posterPath = this.posterPath + this.props.data.poster_path || ''
-    // const title = this.props.data.original_title || 'title'
-    // const overview = this.props.data.overview || 'overview'
-    console.log(this.props)
     const path = 'https://image.tmdb.org/t/p/w92_and_h138_bestv2'
     const posterPath = path + this.props.data.poster_path
     const title = this.props.data.title

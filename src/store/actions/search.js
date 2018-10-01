@@ -1,14 +1,9 @@
-// const search = term => {
-//   return {
-//     type: 'search',
-//     payload: term,
-//     movies: null
-//   }
-// }
+import MoviesAPI from "./../../services/api/movieDB"
 
 const search = searchTerm => {
   return dispatch => {
-    return fetch(`https://api.themoviedb.org/3/search/movie?api_key=249bfd842941339e51fe3d4eaeeba219&query=${searchTerm}`)
+    const moviesAPI = new MoviesAPI ()
+    return fetch(moviesAPI.getMoviesURL(searchTerm))
       .then(response => response.json().then(body => ({response, body})))
       .then(({ response, body }) => {
         if (response.ok) {

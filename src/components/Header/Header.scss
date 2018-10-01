@@ -1,3 +1,5 @@
+@import "../../helpers/css/global.scss";
+
 
 $header-bg: #081c24;
 $header-color: #fff;
@@ -18,5 +20,6 @@ header {
   h1 {
     color: $header-color;
     margin: 0 0 0 15px;
+    font-size: 2em;
   }
 }

@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import "./mixin";
 
 $font-default: 'Roboto', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: $font-default;
+  font-size: 14px;
 }
 
 .container {
@@ -13,3 +19,8 @@ body {
   padding: 0 15px;
   margin: auto;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+

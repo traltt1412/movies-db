@@ -1,17 +1,25 @@
+
 .search-results__item {
   display: flex;
 
+  & + .search-results__item {
+    margin-top: 15px;
+  }
+
   .search-result__feature {
-    flex-grow: 1;
-    flex-basis: auto;
+    flex: 0 0 auto;
+    max-width: 30%;
+    margin-right: 15px;
     
     img {
       display: block;
+      width: 100%;
     }
   }
   
   .search-result__content {
-    flex-grow: 1;
-    flex-basis: auto;
+    h3 {
+      margin-bottom: 10px;
+    }
   }
 }
